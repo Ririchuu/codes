@@ -32,4 +32,13 @@ def play_game():
             print(f"You guessed it in {attempts} attempts.")
             break
 
+def ask_replay():
+    while True:
+        choice = input("Do you want to play again? (yes/no): ").lower()
+        if choice in ['yes', 'y']:
+            return True
+        elif choice in ['no', 'n']:
+            return False
+        else:
+            print("❓ Please enter yes or no.")
 
